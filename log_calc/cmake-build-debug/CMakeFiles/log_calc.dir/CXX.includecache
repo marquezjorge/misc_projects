@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/jorgemarquez/Documents/misc_projects/log_calc/log.h
+iostream
+-
+
+/Users/jorgemarquez/Documents/misc_projects/log_calc/main.cpp
+iostream
+-
+log.h
+/Users/jorgemarquez/Documents/misc_projects/log_calc/log.h
+
