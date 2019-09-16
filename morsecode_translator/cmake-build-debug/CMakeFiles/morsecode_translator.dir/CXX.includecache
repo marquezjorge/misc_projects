@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/jorgemarquez/Documents/misc_projects/morsecode_translator/main.cpp
+iostream
+-
+string
+-
+morsecode.h
+/Users/jorgemarquez/Documents/misc_projects/morsecode_translator/morsecode.h
+
+/Users/jorgemarquez/Documents/misc_projects/morsecode_translator/morsecode.cpp
+iostream
+-
+morsecode.h
+/Users/jorgemarquez/Documents/misc_projects/morsecode_translator/morsecode.h
+string
+-
+
+/Users/jorgemarquez/Documents/misc_projects/morsecode_translator/morsecode.h
+iostream
+-
+cstring
+-
+
