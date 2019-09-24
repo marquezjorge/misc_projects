@@ -13,18 +13,41 @@ namespace morsecode_translator
         input = "";
     }
 
+
+
     void MorseCode::setString(std::string userInput)
     {
         input = userInput;
     }
 
+
+
     void MorseCode::translateMessage()
     {
-        for(int i = 0; i < input.length(); i++){
-            matchChar(input[i]);
+        for(int i = 0; i < input.length(); i++)
+        {
+            if(validateMessage(input[i]))
+                matchChar(input[i]);
             std::cout << "    ";
         }
+        std::cout << std::endl << std::endl;
     }
+
+
+
+    //if char is a letter, will return 'True' else it returns
+    // false for any other character passed to it
+    bool MorseCode::validateMessage(char targetChar)
+    {
+        bool flag = true;
+
+        if(!isspace(targetChar) && !isalpha(targetChar))
+            flag = false;
+
+        return flag;
+    }
+
+
 
     void MorseCode::matchChar(char targetChar)
     {

@@ -17,6 +17,7 @@ namespace morsecode_translator
         void setString(std::string userInput);
         void matchChar(char targetChar);
         void translateMessage();
+        bool validateMessage(char);
 
     private:
         std::string input;
