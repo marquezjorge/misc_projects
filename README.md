@@ -1,3 +1,3 @@
 # misc_projects
 
-Repository of mini programming projects I have completed.
+Repository of small programming projects that I am working or have completed.
