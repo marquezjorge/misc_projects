@@ -27,8 +27,10 @@ namespace morsecode_translator
         for(int i = 0; i < input.length(); i++)
         {
             if(validateMessage(input[i]))
+            {
                 matchChar(input[i]);
-            std::cout << "    ";
+                std::cout << "    ";
+            }
         }
         std::cout << std::endl << std::endl;
     }

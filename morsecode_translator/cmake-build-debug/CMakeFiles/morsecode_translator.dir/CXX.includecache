@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/Users/jorgemarquez/Documents/misc_projects/morsecode_translator/main.cpp
+/Users/jorgemarquez/Documents/misc_projects/morsecode_translator/morsecode.cpp
 iostream
--
-string
 -
 morsecode.h
 /Users/jorgemarquez/Documents/misc_projects/morsecode_translator/morsecode.h
+string
+-
 
 /Users/jorgemarquez/Documents/misc_projects/morsecode_translator/morsecode.h
 iostream

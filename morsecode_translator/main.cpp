@@ -81,9 +81,9 @@ Repeat? (yes/no)
 Morse Code Translator
 -------------------------------
 Enter a string to be translated
--> to make s*r3 that *** it works
+-> mak3 s*r3 it w0rks c0rrectly
 
--    - - -        - -    * -    - * -    *        * * *        * - *            -    * * * *    * -    -                        * *    -        * - -    - - -    * - *    - * -    * * *
+- -    * -    - * -        * * *    * - *        * *    -        * - -    * - *    - * -    * * *        - * - *    * - *    * - *    *    - * - *    -    * - * *    - * - -
 
 Repeat? (yes/no)
 -> no
