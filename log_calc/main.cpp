@@ -3,14 +3,15 @@
 
 using namespace log_calc;
 
-void calculatorProgram(LogCalc);
+void calculatorProgram(LogCalc&, int&);
 void printResults(LogCalc);
 
 int main() {
 
     LogCalc test;
+    int choice = 0;
 
-    calculatorProgram(test);
+    calculatorProgram(test, choice);
 
     return 0;
 }
@@ -19,23 +20,37 @@ int main() {
 
 
 
-void calculatorProgram(LogCalc test)
+void calculatorProgram(LogCalc& test, int& choice)
 {
     double num = 0;
 
-    std::cout << "Enter log base: ";
-    std::cin >> num;
+    do
+    {
+        std::cout << "Log Calculator" << std::endl;
+        std::cout << "--------------" << std::endl;
 
-    test.setLogBase(num);
+        std::cout << "Enter log base: ";
+        std::cin >> num;
 
-    std::cout << "Enter operand: ";
-    std::cin >> num;
+        test.setLogBase(num);
 
-    std::cout << std::endl;
+        std::cout << "Enter operand: ";
+        std::cin >> num;
 
-    test.setOperand(num);
+        std::cout << std::endl;
 
-    printResults(test);
+        test.setOperand(num);
+
+        printResults(test);
+
+        std::cout << "\n(-1 to quit, 0 to continue)" << std::endl;
+        std::cout << "-> ";
+        std::cin >> choice;
+        std::cout << std::endl;
+
+    }while(choice != -1);
+
+    std::cout << "Goodbye." << std::endl;
 
 }
 
