@@ -9,7 +9,12 @@ int main() {
 
     StringReverse test;
 
-    test.readInput("hello.hola.hi");
+    test.readInput(".hello.hi");
+
+    std::cout << test.pop() << std::endl;
+    std::cout << test.pop() << std::endl;
+
+
 
     return 0;
 }

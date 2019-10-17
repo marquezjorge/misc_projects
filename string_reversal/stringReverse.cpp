@@ -45,18 +45,25 @@ namespace string_reversal
     void StringReverse::readInput(std::string inputIn)
     {
         std::string temp;
-        int prevPos = 0, pos = 0;
+        int pos = 0;
 
-        for(int i = 0; i < inputIn.length(); i++)
+        for(int i = inputIn.length(); i > 0; i--)
         {
             if(inputIn[i] == '.')
             {
-                pos = i;
-                push(inputIn.substr(prevPos, pos));
-                prevPos = i;
+                pos = i + 1;
 
+                while(inputIn[pos] != '.' && pos != inputIn.length())
+                {
+                    temp += inputIn[pos];
+                    pos++;
+                }
+
+                push(temp);
             }
         }
+
+
 
     }
 
