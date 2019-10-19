@@ -4,7 +4,6 @@
 
 #include <iostream>
 #include "stringReverse.h"
-#include "string.h"
 
 namespace string_reversal
 {
@@ -42,14 +41,19 @@ namespace string_reversal
 
 
 
+    /* this function interates through the string until it
+     * reads a '.', at that point in then uses another loop
+     * to iterate up until the position of the dot. using
+     * a temp string variable it copies and then pushes that
+     * copy onto the stack */
     void StringReverse::readInput(std::string inputIn)
     {
         std::string temp;
-        int pos = 0, prevPos = 0;
+        int pos = 0, prevPos = 0, length = inputIn.length();
 
-        for(int i = 0; i < inputIn.length(); i++)
+        for(int i = 0; i <= length; i++)
         {
-            if(inputIn[i] == '.' || i == inputIn.length())
+            if(inputIn[i] == '.' || i == length)
             {
                 temp = "";
                 pos = i;
@@ -69,10 +73,15 @@ namespace string_reversal
 
     void StringReverse::printStrings()
     {
+        std::string temp;
+
         do
         {
-            std::cout << pop() << std::endl;
+            temp = pop();
 
-        }while(pop() != "(empty)");
+            if(temp != "(empty)")
+                std::cout << temp << " ";
+
+        }while(temp != "(empty)");
     }
 }

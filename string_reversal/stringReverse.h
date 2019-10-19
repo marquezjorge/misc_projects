@@ -1,6 +1,3 @@
-//
-// Created by Jorge Marquez on 2019-10-12.
-//
 
 #ifndef STRING_REVERSAL_STRINGREVERSE_H
 #define STRING_REVERSAL_STRINGREVERSE_H

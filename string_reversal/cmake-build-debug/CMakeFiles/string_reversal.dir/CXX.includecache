@@ -6,13 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/jorgemarquez/Documents/misc_projects/string_reversal/stringReverse.cpp
+/Users/jorgemarquez/Documents/misc_projects/string_reversal/main.cpp
 iostream
 -
 stringReverse.h
 /Users/jorgemarquez/Documents/misc_projects/string_reversal/stringReverse.h
-string.h
-/Users/jorgemarquez/Documents/misc_projects/string_reversal/string.h
 
 /Users/jorgemarquez/Documents/misc_projects/string_reversal/stringReverse.h
 iostream
