@@ -1,5 +1,9 @@
 package word_counter;
 
+/*
+ * The following program is a simple word counter using the regex library
+ */
+
 import java.util.Scanner;
 import java.util.regex.*;
 
@@ -29,17 +33,19 @@ class WordCount
 		System.out.println("Enter a string or paragrahp of text to get word count");
 		System.out.print("-> ");
 		setString(input.nextLine());
-		//userInput = input.nextLine();
 	}
 	
 	public int count()
 	{
 		int count = 0;
-		Pattern p = Pattern.compile("a-zA-Z");
+		Pattern p = Pattern.compile("[a-zA-Z]+");
 		
-		for(int i = 0; i < userInput.length() + 1; i++)
+		Matcher m = p.matcher(getString());
+		
+		while(m.find())
 		{
-			Matcher m = p.matcher(getString());
+			m.group();
+			count++;
 		}
 		
 		return count;
@@ -53,5 +59,39 @@ class WordCount
 	private String getString()
 	{
 		return userInput;
+	}
+}
+
+class Stack
+{
+	private Node top = null;
+	
+	public void push(Node newNode)
+	{
+		if(newNode == null)
+			return;
+		
+		newNode.next = top;
+		top = newNode;
+	}
+	
+	public String pop()
+	{
+		
+		
+		
+		return "";
+	}
+	
+	class Node
+	{
+		String data = null;
+		Node next = null;
+		
+		Node(String dataIn)
+		{
+			data = dataIn;
+			next = null;
+		}
 	}
 }
